@@ -17,13 +17,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    seconddialog.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    seconddialog.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    seconddialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

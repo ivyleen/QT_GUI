@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "seconddialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,7 +21,13 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_newWindow_clicked();
+
 private:
     Ui::MainWindow *ui;
+
+    // modeless approach for opening a new window
+    // creating a new window into the heap
+    SecondDialog* secDialogObj;
 };
 #endif // MAINWINDOW_H
