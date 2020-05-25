@@ -24,7 +24,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    ui->label->setText("Some text");
+    ui->label->setText("<html><b>First line</b><br><u>Second</u> line</html>");
 }
 
 
